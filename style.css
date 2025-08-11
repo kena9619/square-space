@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+/* Base Reset */
+>>>>>>> 0567aa2406b4c1f774daedaa481d1580a9292225
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
+<<<<<<< HEAD
+=======
+
+/* Navbar */
+>>>>>>> 0567aa2406b4c1f774daedaa481d1580a9292225
 .navbar {
   position: absolute;
   top: 0;
@@ -41,7 +50,11 @@ body {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Mobile Menu Toggle (hidden by default) */
+>>>>>>> 0567aa2406b4c1f774daedaa481d1580a9292225
 .menu-toggle {
   display: none;
   background: none;
@@ -51,7 +64,11 @@ body {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Hero Section */
+>>>>>>> 0567aa2406b4c1f774daedaa481d1580a9292225
 .hero {
   position: relative;
   height: 100vh;
