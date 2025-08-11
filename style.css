@@ -1,0 +1,126 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.logo img {
+  height: 50px;
+}
+.nav-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.auth-buttons a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.auth-buttons .get-started {
+  background: white;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* Mobile Menu Toggle (hidden by default) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("https://i.ibb.co/cKLysWSp/mobile-background-500w.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.hero-btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+  .auth-buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .hero-content {
+    padding: 0 20px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
